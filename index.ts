@@ -61,7 +61,7 @@ function buildBody(params: Record<string, unknown>): Record<string, unknown> {
 }
 
 const plugin: PluginEntry = {
-  id: "pdfapihub-receipt-scanner",
+  id: "receipt-scanner",
   name: "Receipt Scanner",
   register(api) {
     // ─── Scan Receipt ────────────────────────────────────────

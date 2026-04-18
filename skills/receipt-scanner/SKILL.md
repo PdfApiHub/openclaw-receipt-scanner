@@ -20,7 +20,24 @@ Scan, OCR, and digitize paper receipts. Enhance photos, extract text and amounts
 
 Get your **free API key** at [https://pdfapihub.com](https://pdfapihub.com).
 
-Configure in `~/.openclaw/openclaw.json`:
+**Privacy note:** Receipt images you process are uploaded to PDFAPIHub's cloud service for OCR and enhancement. Files are auto-deleted after 30 days.
+
+Configure your API key in `~/.openclaw/openclaw.json`:
+
+```json
+{
+  "plugins": {
+    "entries": {
+      "receipt-scanner": {
+        "enabled": true,
+        "apiKey": "your-api-key-here"
+      }
+    }
+  }
+}
+```
+
+Or use the `env` approach (OpenClaw injects it into `config.apiKey` automatically):
 
 ```json
 {
@@ -36,8 +53,6 @@ Configure in `~/.openclaw/openclaw.json`:
   }
 }
 ```
-
-**Privacy note:** Files you process are uploaded to PDFAPIHub's cloud service. Files are auto-deleted after 30 days.
 
 ## Usage Examples
 

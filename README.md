@@ -28,18 +28,33 @@ Turn paper receipt photos into clean digital records. Enhance image quality, ext
 ## Installation
 
 ```bash
-openclaw plugins install clawhub:pdfapihub-receipt-scanner
+openclaw plugins install clawhub:receipt-scanner
 ```
 
 ## Configuration
 
-Add your API key in `~/.openclaw/openclaw.json`:
+**Privacy note:** Receipt images are uploaded to PDFAPIHub's cloud service for OCR and enhancement. Files are auto-deleted after 30 days.
 
 ```json
 {
   "plugins": {
     "entries": {
-      "pdfapihub-receipt-scanner": {
+      "receipt-scanner": {
+        "enabled": true,
+        "apiKey": "your-api-key-here"
+      }
+    }
+  }
+}
+```
+
+Or use the `env` approach:
+
+```json
+{
+  "plugins": {
+    "entries": {
+      "receipt-scanner": {
         "enabled": true,
         "env": {
           "PDFAPIHUB_API_KEY": "your-api-key-here"
