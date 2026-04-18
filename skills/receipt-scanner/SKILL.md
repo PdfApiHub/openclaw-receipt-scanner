@@ -26,7 +26,7 @@ Configure in `~/.openclaw/openclaw.json`:
 {
   "plugins": {
     "entries": {
-      "pdfapihub-receipt-scanner": {
+      "receipt-scanner": {
         "enabled": true,
         "env": {
           "PDFAPIHUB_API_KEY": "your-api-key-here"
@@ -36,6 +36,8 @@ Configure in `~/.openclaw/openclaw.json`:
   }
 }
 ```
+
+**Privacy note:** Files you process are uploaded to PDFAPIHub's cloud service. Files are auto-deleted after 30 days.
 
 ## Usage Examples
 
