@@ -3,7 +3,7 @@
   "name": "receipt-scanner",
   "displayName": "Receipt Scanner",
   "description": "Scan, OCR, and digitize paper receipts. Enhance receipt photos, extract text and amounts, and convert receipts to archival PDFs. Powered by PDFAPIHub.",
-  "version": "1.0.0",
+  "version": "1.0.3",
   "author": "PdfApiHub",
   "homepage": "https://pdfapihub.com",
   "extensions": [
